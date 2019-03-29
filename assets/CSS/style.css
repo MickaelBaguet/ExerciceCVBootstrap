@@ -1,0 +1,101 @@
+.fondRouge
+{
+  background-color: #AA5640;
+}
+
+.blanc
+{
+  color: white;
+}
+
+.navbar
+{
+  background-color: #424242;
+}
+
+.row
+{
+  margin: 0;
+}
+
+nav a
+{
+  color: #F8F0D1;
+}
+
+.btn
+{
+  background-color: #AA5640;
+  border-color: #AA5640;
+}
+
+.btn:hover
+{
+  background-color: #bf6048;
+  border-color: #bf6048;
+}
+
+.menu:hover
+{
+  background-color: #D3D3D3;
+  color: white;
+}
+
+.container-fluid
+{
+  padding: 0;
+}
+
+.jumbotron-fluid
+{
+  background-color: #AA5640;
+  color: white;
+}
+
+.cMoi
+{
+  padding: 40px 0;
+  margin: 0;
+}
+
+.cExp, .cForm  
+{
+  background-color: #EFEDED;
+  margin: 0;
+}
+
+.entete
+{
+  padding: 60px 0 60px 0;
+}
+
+.textentete
+{
+  font-size: 60px;
+  color: white;
+  padding: 10px 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.arrondi
+{
+  border-radius: 15px;
+  background-color: #AA5640;
+}
+
+.arrondiD
+{
+  border-radius: 15px 0 0 15px;
+}
+
+.arrondiG
+{
+  border-radius: 0 15px 15px 0;
+}
+
+br
+{
+  width: 80%;
+}

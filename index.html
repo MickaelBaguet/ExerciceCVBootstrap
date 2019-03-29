@@ -1,57 +1,231 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/Lib/bootstrap.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/Lib/bootstrap.css">
 
-    <title>Exercice 4</title>
-  </head>
-  <body>
+  <link rel="stylesheet" href="assets/CSS/style.css">
 
-    <!-- Box en forme de card -->
-    <div class="card text-center">
-      <div class="card-body">
-        <p class="card-title font-weight-bolder">La Manu Le Havre</p>
-        <p class="card-text">L'École des métiers du Numérique</p>
-        <!-- Button avec comme trigger le modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          + d'info
-        </button>
+  <title>Exercice CV</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <div class="jumbotron jumbotron-fluid">
+      <!-- <img src="assets/Img/img-menu.jpg" alt="Image menu" width="300px" height="<3></3>00px"> -->
+      <div class="text-center">
+        <h1>MICKAEL BAGUET</h1>
+        <p>DEVELOPPEUR WEB JUNIOR JUNIOR</p>
+        <p>Il y a mieux mais c'est plus cher !</p>
       </div>
     </div>
 
+    <nav class="navbar sticky-top nav-pills flex-column flex-sm-row text-center mt-n5">
+      <a class="menu flex-sm-fill text-sm-center nav-link" href="#1">A propos</a>
+      <a class="menu flex-sm-fill text-sm-center nav-link" href="#2">Exp. pro</a>
+      <a class="menu flex-sm-fill text-sm-center nav-link" href="#3">Compétences</a>
+      <a class="menu flex-sm-fill text-sm-center nav-link" href="#4">Formation</a>
+      <a class="menu flex-sm-fill text-sm-center nav-link" href="#">Contact</a>
+    </nav>
 
-        <!-- Modal -->
-    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!-- Partie supérieur du modal -->
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">La Manu Le Havre</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!-- Partie central du modal -->
-          <div class="modal-body bg-primary text-center text-white">
-            <div class="p-2">https://lamanu.fr/le-havre</div>
-          </div>
-          <!-- Pied du modal -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">X Fermer</button>
+    <section id="1">
+      <div class="entete row d-flex justify-content-center">
+        <div class="arrondi" >
+          <h1 class="textentete">A PROPOS</h1>
+        </div>
+      </div>
+      <div class=" cMoi row align-items-center">
+        <div class="col-3">
+          <img src="assets/Img/photo.jpg" alt="Photo de moi" width="350px" height="350px">
+        </div>
+        <div class="col-8 ml-5">
+          <p>J’ai pu acquérir grâce à mes dernières expériences professionnelles la capacité d’écouter, d’analyser et de répondre aux problèmes d’un public varié.</p>
+          <p>Dynamique et autonome, je sais m’adapter rapidement à diverses situations.</p>
+          <p>Bon niveau d’anglais en lecture et écriture.</p>
+          <p>Disponible de suite, je suis mobile.</p>
+          <!-- <p><a href="" download="CV.pdf">Mon CV papier</a></p> -->
+          <div class="d-flex flex-row-reverse align-content-end">
+            <a href="" download="assets/Img/CV.pdf"><button type="button" class="btn btn-primary">Mon CV papier</button></a>
           </div>
         </div>
       </div>
+    </section>
+
+
+    <section id="2">
+      <div class="cExp pb-3">
+
+        <div class="entete row d-flex justify-content-center">
+          <div class="arrondi" >
+            <h1 class="textentete">EXPERIENCE</h1>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="container d-flex flex-row justify-content-center ">
+            <div class="p-2 col-8 border flex-fill fondRouge blanc arrondiD shadow">Gestionnaire</div>
+            <div class="p-2 border flex-fill fondRouge blanc arrondiG shadow">Avril 2017 - Décembre 2017</div>
+          </div>
+          <ul>
+            <li class="p-4">Co-responsable des manuels numériques au sein de la librairie CUFAY, réception et réalisation de commandes d’établissement scolaires, prise d’appel et de renseignement auprès des divers fournisseurs.</li>
+          </ul>
+        </div>
+
+        <br>
+
+        <div class="">
+          <div class="container d-flex flex-row justify-content-center">
+            <div class="p-2 col-8 border flex-fill fondRouge blanc arrondiD shadow">Agent administratif</div>
+            <div class="p-2 border flex-fill fondRouge blanc arrondiG shadow">Juillet 2017 - Juin 2017</div>
+          </div>
+          <ul>
+            <li class="p-4">Accueil le public et le renseigne, conseiller la personne, aider les personnes lors de démarches numériques au sein du Pôle-Emploi d'Abbeville.</li>
+          </ul>
+        </div>
+
+        <br>
+
+        <div class="">
+          <div class="container d-flex flex-row justify-content-center">
+            <div class="p-2 col-8 border flex-fill fondRouge blanc arrondiD shadow">Animateur service numérique</div>
+            <div class="p-2 border flex-fill fondRouge blanc arrondiG shadow">Septembre 2015 - Mai 2016</div>
+          </div>
+          <ul>
+            <li class="p-4">Réception et traitements des documents administratifs, mise à jour des procédures administratives, appels et prise de rendez-vous auprès de demandeurs d’emplois.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="3">
+      <div id="cComp">
+        <div class="entete row d-flex justify-content-center">
+          <div class="arrondi">
+            <h1 class="textentete">COMPETENCE</h1>
+          </div>
+        </div>
+
+        <div class="cCompt1">
+          <div class="cCompDetail">
+            <h3>Relationnel</h3>
+            <ul>
+              <li><progress value="30" max="100">30%</progress> Compétence 1</li>
+              <li><progress value="50" max="100">50%</progress> Compétence 2</li>
+              <li><progress value="70" max="100">70%</progress> Compétence 3</li>
+            </ul>
+          </div>
+
+          <div class="ligne"></div>
+
+          <div class="cCompDetail">
+            <h3>Informatique</h3>
+            <ul>
+              <li><progress value="30" max="100">30%</progress> Compétence 1</li>
+              <li><progress value="50" max="100">50%</progress> Compétence 2</li>
+              <li><progress value="70" max="100">70%</progress> Compétence 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="cForm" id="4">
+      <div class="entete row d-flex justify-content-center">
+        <div class="arrondi">
+          <h1 class="textentete">FORMATION</h1>
+        </div>
+      </div>
+      <div class="cForm1">
+        <div class="cFormDate">
+          <h3>2019</h3>
+        </div>
+        <div class="cFormTitre">
+          <h4>Formation Développeur web et web mobile</h4>
+          <ul>
+            <li>Ecole LAMANU - Amiens</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cForm1">
+        <div class="cFormDate">
+          <h3>2015</h3>
+        </div>
+        <div class="cFormTitre">
+          <h4>Niveau Licence Informatique</h4>
+          <ul>
+            <li>UFR Sciences - Amiens</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cForm1">
+        <div class="cFormDate">
+          <h3>2012</h3>
+        </div>
+        <div class="cFormTitre">
+          <h4>Niveau DUT Informatique</h4>
+          <ul>
+            <li>IUT Informatique</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <footer>
+      <div class="d-flex justify-content-around bg-primary">
+        <div class="p-2">
+          <a href="mailto:baguetmickael@gmail.com">
+          <img src="assets/Img/icon-mail.png" alt="Icon Email" height="50" width="50" ><p>Mail</p>
+          </a>
+        </div>
+        <div class="p-2"><img src="assets/Img/icon-tel.png" alt="Icon Tel" height="50" width="50"></div>
+        <div class="p-2"><a href="https://github.com/MickaelBaguet?tab=repositories"><img src="assets/Img/icon-git.png" alt="Icon Git" height="50" width="50"></a></div>
+      </div>
+
+
+
+
+    </footer>
+
+
+    <div id="cCont" id="#contact">
+
+        <h2>Contact</h2>
+
+      <div id="mail">
+        <a href="mailto:baguetmickael@gmail.com">
+          <img src="assets/Img/icon-mail.png" alt="Icon Email" height="50" width="50" >
+        </a>
+        <p>Mail</p>
+      </div>
+
+      <div id="tel">
+        <img src="assets/Img/icon-tel.png" alt="Icon Tel" height="50" width="50">
+        <p>06.28.64.09.83</p>
+      </div>
+
+      <div id="git">
+        <a href="https://github.com/MickaelBaguet?tab=repositories"><img src="assets/Img/icon-git.png" alt="Icon Git" height="50" width="50"></a>
+        <p>GitHub</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>
