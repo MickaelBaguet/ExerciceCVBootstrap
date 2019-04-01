@@ -75,6 +75,12 @@ nav a
   padding: 60px 0 60px 0;
 }
 
+h1
+{
+  font-size: 4em;
+  font-weight: 600;
+}
+
 .textentete
 {
   font-size: 3.8em;
@@ -99,6 +105,11 @@ nav a
 .arrondiG
 {
   border-radius: 0 15px 15px 0;
+}
+
+.cDet
+{
+  padding-left: 10px;
 }
 
 .cDetail
@@ -149,7 +160,7 @@ ul li
 {
   width: 70%;
   border-left: 4px black solid;
-  padding-left: 1em;
+  padding-left: 1Aem;
 }
 
 /* Cache le menu deroulant à moins de 500px */
