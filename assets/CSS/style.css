@@ -1,4 +1,4 @@
-.fondRouge
+  .fondRouge
 {
   background-color: #AA5640;
 }
@@ -58,7 +58,7 @@ nav a
   margin: 0;
 }
 
-.cExp, .cForm  
+.cExp, .cForm
 {
   background-color: #EFEDED;
   margin: 0;
@@ -93,9 +93,4 @@ nav a
 .arrondiG
 {
   border-radius: 0 15px 15px 0;
-}
-
-br
-{
-  width: 80%;
 }
