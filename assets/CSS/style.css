@@ -149,6 +149,7 @@ ul li
 {
   width: 70%;
   border-left: 4px black solid;
+  padding-left: 1em;
 }
 
 /* Cache le menu deroulant à moins de 500px */
