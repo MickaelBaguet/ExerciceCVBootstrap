@@ -24,32 +24,65 @@
       </div>
     </div>
 
-    <nav class="navbar sticky-top nav-pills flex-column flex-sm-row text-center mt-n5">
+    <nav class="navbar cMenu sticky-top nav-pills flex-column flex-sm-row text-center mt-n5">
       <a class="menu flex-sm-fill text-sm-center nav-link" href="#1">A propos</a>
       <a class="menu flex-sm-fill text-sm-center nav-link" href="#2">Exp. pro</a>
       <a class="menu flex-sm-fill text-sm-center nav-link" href="#3">Compétences</a>
       <a class="menu flex-sm-fill text-sm-center nav-link" href="#4">Formation</a>
-      <a class="menu flex-sm-fill text-sm-center nav-link" href="#">Contact</a>
+      <a class="menu flex-sm-fill text-sm-center nav-link" href="#5">Contact</a>
+    </nav>
+
+    <nav class="navbar sticky-top navbar-dark d-sm-none mt-n5 bg-dark">
+      <nav class="barr navbar navbar-expand-lg navbar-light text-center">
+        <div class="barr">
+          <button class="barr navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+
+        <div class="collapse navbar-collapse pl-2" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="menu flex-sm-fill text-sm-center nav-link" href="#1">A propos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="menu flex-sm-fill text-sm-center nav-link" href="#2">Exp. pro</a>
+            </li>
+            <li class="nav-item active">
+              <a class="menu flex-sm-fill text-sm-center nav-link" href="#3">Compétences</a>
+            </li>
+            <li class="nav-item active">
+              <a class="menu flex-sm-fill text-sm-center nav-link" href="#4">Formation</a>
+            </li>
+            <li class="nav-item active">
+              <a class="menu flex-sm-fill text-sm-center nav-link" href="#5">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     </nav>
 
     <section id="1">
       <div class="entete row d-flex justify-content-center">
         <div class="arrondi" >
-          <h1 class="textentete">A PROPOS</h1>
+          <h2 class="textentete">A PROPOS</h2>
         </div>
       </div>
       <div class=" cMoi row align-items-center">
         <div class="col-3">
-          <img src="assets/Img/photo.jpg" alt="Photo de moi" width="350px" height="350px">
+          <img class="img" src="assets/Img/photo.jpg" alt="Photo de moi">
         </div>
         <div class="col-8 ml-5">
           <p>J’ai pu acquérir grâce à mes dernières expériences professionnelles la capacité d’écouter, d’analyser et de répondre aux problèmes d’un public varié.</p>
           <p>Dynamique et autonome, je sais m’adapter rapidement à diverses situations.</p>
           <p>Bon niveau d’anglais en lecture et écriture.</p>
           <p>Disponible de suite, je suis mobile.</p>
-          <!-- <p><a href="" download="CV.pdf">Mon CV papier</a></p> -->
           <div class="d-flex flex-row-reverse align-content-end">
-            <a href="" download="assets/Img/CV.pdf"><button type="button" class="btn btn-primary">Mon CV papier</button></a>
+            <form method="get" action="assets/Img/CV.pdf">
+               <button type="button" class="btn btn-primary">Mon CV papier</button>
+            </form>
           </div>
         </div>
       </div>
@@ -61,21 +94,19 @@
 
         <div class="entete row d-flex justify-content-center">
           <div class="arrondi" >
-            <h1 class="textentete">EXPERIENCE</h1>
+            <h2 class="textentete">EXPERIENCE</h2>
           </div>
         </div>
 
         <div class="">
           <div class="container d-flex flex-row justify-content-center ">
-            <div class="p-2 col-8 border flex-fill fondRouge blanc arrondiD shadow">Gestionnaire</div>
+            <div class="p-2 col-8 border flex-fill fondRouge blanc arrondiD shadow ">Gestionnaire</div>
             <div class="p-2 border flex-fill fondRouge blanc arrondiG shadow">Avril 2017 - Décembre 2017</div>
           </div>
           <ul>
-            <li class="p-4">Co-responsable des manuels numériques au sein de la librairie CUFAY, réception et réalisation de commandes d’établissement scolaires, prise d’appel et de renseignement auprès des divers fournisseurs.</li>
+            <li class="p-4 exp">Co-responsable des manuels numériques au sein de la librairie CUFAY, réception et réalisation de commandes d’établissement scolaires, prise d’appel et de renseignement auprès des divers fournisseurs.</li>
           </ul>
         </div>
-
-        <br>
 
         <div class="">
           <div class="container d-flex flex-row justify-content-center">
@@ -86,8 +117,6 @@
             <li class="p-4">Accueil le public et le renseigne, conseiller la personne, aider les personnes lors de démarches numériques au sein du Pôle-Emploi d'Abbeville.</li>
           </ul>
         </div>
-
-        <br>
 
         <div class="">
           <div class="container d-flex flex-row justify-content-center">
@@ -105,97 +134,161 @@
 
     <section id="3">
       <div id="cComp">
+
         <div class="entete row d-flex justify-content-center">
           <div class="arrondi">
-            <h1 class="textentete">COMPETENCE</h1>
+            <h2 class="textentete">COMPETENCE</h2>
           </div>
         </div>
 
-        <div class="cCompt1">
-          <div class="cCompDetail">
-            <h3>Relationnel</h3>
-            <ul>
-              <li><progress value="30" max="100">30%</progress> Compétence 1</li>
-              <li><progress value="50" max="100">50%</progress> Compétence 2</li>
-              <li><progress value="70" max="100">70%</progress> Compétence 3</li>
-            </ul>
+        <div class="ctest mb-3 d-flex">
+
+          <div class="cDetail">
+            <h3 class="d-flex justify-content-center pb-3">Relationnel</h3>
+
+              <ul class="d-flex justify-content-center flex-wrap">
+                <!-- Première compétence -->
+                <li class="m-1 text-center">
+                  <span>Accueil public</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </li>
+                <!-- Deuxième compétence -->
+                <li class="m-1 text-center">
+                  <span>Capacité d'écoute</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </li>
+                <!-- Troisième compétence -->
+                <li class="m-1 text-center">
+                  <span>Force de persuasion</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
           </div>
 
-          <div class="ligne"></div>
+          <div class="cDetail">
+            <h3 class="d-flex justify-content-center pb-3">Informatique</h3>
 
-          <div class="cCompDetail">
-            <h3>Informatique</h3>
-            <ul>
-              <li><progress value="30" max="100">30%</progress> Compétence 1</li>
-              <li><progress value="50" max="100">50%</progress> Compétence 2</li>
-              <li><progress value="70" max="100">70%</progress> Compétence 3</li>
-            </ul>
+            <div class="d-block">
+              <ul class="d-flex justify-content-center flex-wrap">
+                <!-- Première compétence -->
+                <li class="m-1 text-center">
+                  <span>HTML</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                    </div>
+                </li>
+                <!-- Deuxième compétence -->
+                <li class="m-1 text-center">
+                  <span>CSS</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </li>
+                <!-- Troisième compétence -->
+                <li class="m-1 text-center">
+                  <span>PHP / JS</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="4">
+      <div class="cForm ">
+        <!-- Titre de la section -->
+        <div class="entete row d-flex justify-content-center">
+          <div class="arrondi">
+            <h2 class="textentete">FORMATION</h2>
+          </div>
+        </div>
+        <!-- Boite avec la date et la description -->
+        <div class="cDetailForm container d-flex align-items-center mb-2">
+          <!-- Sous boite avec l'année -->
+          <div class="cDate">
+            <h3 class="d-flex justify-content-center">2019</h3>
+          </div>
+          <!-- Sous boite avec la description -->
+          <div class="cDet d-block pt-1">
+            <h4>Formation Développeur web et web mobile</h4>
+            <ul>
+              <li>Ecole LAMANU - Amiens</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="cForm" id="4">
+        <!-- Boite avec la date et la description -->
+        <div class="cDetailForm container d-flex align-items-center mb-2">
+          <!-- Sous boite avec l'année -->
+          <div class="cDate">
+            <h3 class="d-flex justify-content-center">2015</h3>
+          </div>
+          <!-- Sous boite avec la description -->
+          <div class="cDet pt-1">
+            <h4>Niveau Licence Informatique</h4>
+            <ul>
+              <li>UFR Sciences - Amiens</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Boite avec la date et la description -->
+        <div class="cDetailForm container d-flex align-items-center mb-2">
+          <!-- Sous boite avec l'année -->
+          <div class="cDate">
+            <h3 class="d-flex justify-content-center">2012</h3>
+          </div>
+          <!-- Sous boite avec la description -->
+          <div class="cDet pt-1">
+            <h4>Niveau DUT Informatique</h4>
+            <ul>
+              <li>IUT Informatique - Amiens</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <footer id="5">
       <div class="entete row d-flex justify-content-center">
         <div class="arrondi">
-          <h1 class="textentete">FORMATION</h1>
-        </div>
-      </div>
-      <div class="cForm1">
-        <div class="cFormDate">
-          <h3>2019</h3>
-        </div>
-        <div class="cFormTitre">
-          <h4>Formation Développeur web et web mobile</h4>
-          <ul>
-            <li>Ecole LAMANU - Amiens</li>
-          </ul>
-        </div>
-      </div>
-      <div class="cForm1">
-        <div class="cFormDate">
-          <h3>2015</h3>
-        </div>
-        <div class="cFormTitre">
-          <h4>Niveau Licence Informatique</h4>
-          <ul>
-            <li>UFR Sciences - Amiens</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="cForm1">
-        <div class="cFormDate">
-          <h3>2012</h3>
-        </div>
-        <div class="cFormTitre">
-          <h4>Niveau DUT Informatique</h4>
-          <ul>
-            <li>IUT Informatique</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <footer>
-
-      <div class="entete row d-flex justify-content-center">
-        <div class="arrondi">
-          <h1 class="textentete">CONTACT</h1>
+          <h2 class="textentete">CONTACT</h2>
         </div>
       </div>
       <div class="d-flex justify-content-around mb-3">
         <div class="p-2">
           <a href="mailto:baguetmickael@gmail.com">
-          <img src="assets/Img/icon-mail.png" alt="Icon Email" height="50" width="50" ><p></p>
+          <img src="assets/Img/icon-mail.png" alt="Icon Email" height="50" width="50" >
           </a>
         </div>
-        <div class="p-2 text-center"><img src="assets/Img/icon-tel.png" alt="Icon Tel" height="50" width="50"><p>06.28.64.09.83</p></div>
+        <div class="p-2 text-center">
+          <a href="tel:+33628640983">
+            <img src="assets/Img/icon-tel.png" alt="Icon Tel" height="50" width="50">
+          </a>
+          <p>06.28.64.09.83</p>
+        </div>
         <div class="p-2"><a href="https://github.com/MickaelBaguet?tab=repositories"><img src="assets/Img/icon-git.png" alt="Icon Git" height="50" width="50"></a></div>
       </div>
-
     </footer>
 
 </div>

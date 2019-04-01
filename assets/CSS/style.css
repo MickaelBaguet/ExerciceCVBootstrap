@@ -1,4 +1,10 @@
-  .fondRouge
+.img
+{
+  width: 130%;
+  height: 130%;
+}
+
+.fondRouge
 {
   background-color: #AA5640;
 }
@@ -71,7 +77,7 @@ nav a
 
 .textentete
 {
-  font-size: 60px;
+  font-size: 3.8em;
   color: white;
   padding: 10px 30px;
   font-weight: 600;
@@ -93,4 +99,108 @@ nav a
 .arrondiG
 {
   border-radius: 0 15px 15px 0;
+}
+
+.cDetail
+{
+  width: 100%;
+}
+
+ul
+{
+  padding-left: 0;
+}
+
+ul li
+{
+  width: 80%;
+  /* Enleve le point sur les éléments de la liste */
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.exp
+{
+  width: 100%;
+  /* Enleve le point sur les éléments de la liste */
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cDetailForm
+{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  border: 2px black solid;
+}
+
+.cDate
+{
+  width: 30%;
+}
+
+.barr
+{
+  width: 100%;
+}
+
+.cDet
+{
+  width: 70%;
+  border-left: 4px black solid;
+}
+
+/* Cache le menu deroulant à moins de 500px */
+@media screen and (min-width: 500px)
+{
+  #cMenuDeroulant
+  {
+    display : none;
+  }
+
+}
+
+@media screen and (max-device-width: 1000px)
+{
+  #mail, #tel, #git
+  {
+    width: 100%;
+  }
+}
+
+/* Cache le menu classique à moins de 500px */
+@media screen and (max-device-width: 500px)
+{
+  /* Enlève le paragraphe de l'en-tête */
+  .cMenu
+  {
+    display: none;
+  }
+
+  .ctest
+  {
+    display: block !important;
+  }
+
+  body
+  {
+    text-align: center;
+  }
+
+  .ctest
+  {
+    width: 100%;
+  }
+
+  .textentete
+  {
+    font-size: 40px;
+  }
+
+  .cMoi img
+  {
+    display: none;
+  }
+
 }
