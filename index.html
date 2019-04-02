@@ -4,18 +4,16 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/Lib/bootstrap.css">
-
+  <!-- Feuille de CSS perso après celle de bootstrap pour qu'elle soit prise en compte -->
   <link rel="stylesheet" href="assets/CSS/style.css">
-
-  <title>Exercice CV</title>
+  <title>CV Mickael BAGUET</title>
 </head>
 <body>
-
+  <!-- Container prenant l'intégralité du body -->
   <div class="container-fluid">
-
+    <!-- jumbotron : boite servant de haut de page -->
     <div class="jumbotron jumbotron-fluid">
       <div class="text-center">
         <h1>MICKAEL BAGUET</h1>
@@ -23,24 +21,24 @@
         <p>Il y a mieux mais c'est plus cher !</p>
       </div>
     </div>
-
-    <nav class="navbar cMenu sticky-top nav-pills flex-column flex-sm-row text-center mt-n5">
-      <a class="menu flex-sm-fill text-sm-center nav-link" href="#1">A propos</a>
-      <a class="menu flex-sm-fill text-sm-center nav-link" href="#2">Exp. pro</a>
-      <a class="menu flex-sm-fill text-sm-center nav-link" href="#3">Compétences</a>
-      <a class="menu flex-sm-fill text-sm-center nav-link" href="#4">Formation</a>
-      <a class="menu flex-sm-fill text-sm-center nav-link" href="#5">Contact</a>
+    <!-- Barre de navigation "sticky", qui reste collée au haut de l'écran lors du scroll down -->
+    <nav class="navbar cMenu sticky-top nav-pills flex-sm-row text-center mt-n5">
+      <a class="menu flex-fill nav-link" href="#1">A propos</a>
+      <a class="menu flex-fill nav-link" href="#2">Exp. pro</a>
+      <a class="menu flex-fill nav-link" href="#3">Compétences</a>
+      <a class="menu flex-fill nav-link" href="#4">Formation</a>
+      <a class="menu flex-fill nav-link" href="#5">Contact</a>
     </nav>
-
+    <!-- Barre de navigation déroulante sticky pour version mobile -->
     <nav class="navbar sticky-top navbar-dark d-sm-none mt-n5 bg-dark">
       <nav class="barr navbar navbar-expand-lg navbar-light text-center">
         <div class="barr">
+          <!-- Button du menu déroulant -->
           <button class="barr navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-
-
+        <!-- Contenu du menu déroulant -->
         <div class="collapse navbar-collapse pl-2" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -61,24 +59,29 @@
           </ul>
         </div>
       </nav>
-
     </nav>
-
+    <!--  -->
+    <!-- Première section : info sur moi -->
+    <!--  -->
     <section id="1">
+      <!-- Titre principal de la section -->
       <div class="entete row d-flex justify-content-center">
         <div class="arrondi" >
           <h2 class="textentete">A PROPOS</h2>
         </div>
       </div>
       <div class=" cMoi row align-items-center">
+        <!-- Partie de droite avec la photo -->
         <div class="col-3">
           <img class="img" src="assets/Img/photo.jpg" alt="Photo de moi">
         </div>
+        <!-- Partie de gauche avec description rapide -->
         <div class="col-8 ml-5">
           <p>J’ai pu acquérir grâce à mes dernières expériences professionnelles la capacité d’écouter, d’analyser et de répondre aux problèmes d’un public varié.</p>
           <p>Dynamique et autonome, je sais m’adapter rapidement à diverses situations.</p>
           <p>Bon niveau d’anglais en lecture et écriture.</p>
           <p>Disponible de suite, je suis mobile.</p>
+          <!-- Button permettant de télécharger le CV papier -->
           <div class="d-flex flex-row-reverse align-content-end">
             <form method="get" action="assets/Img/CV.pdf">
                <button type="button" class="btn btn-primary">Mon CV papier</button>
@@ -87,125 +90,139 @@
         </div>
       </div>
     </section>
-
-
+    <!--  -->
+    <!-- Deuxième section : expérience pro -->
+    <!--  -->
     <section id="2">
+      <!-- Box global de la section -->
       <div class="cExp pb-3">
-
+        <!-- Titre principal de la section -->
         <div class="entete row d-flex justify-content-center">
           <div class="arrondi" >
             <h2 class="textentete">EXPERIENCE</h2>
           </div>
         </div>
-
+        <!-- Box contenant la dernière expérience pro -->
         <div class="">
+          <!-- Box avec l'intitulé du poste et la période -->
           <div class="container d-flex flex-row justify-content-center ">
+            <!-- Box intitulé -->
             <div class="p-2 col-8 border d-flex flex-fill fondRouge blanc arrondiD shadow justify-content-center align-items-center">
               <span>Gestionnaire</span>
             </div>
+            <!-- Box période -->
             <div class="p-2 border flex-fill fondRouge blanc arrondiG shadow">Avril 2017 - Décembre 2017</div>
           </div>
+          <!-- Description du poste -->
           <ul>
             <li class="p-4 exp">Co-responsable des manuels numériques au sein de la librairie CUFAY, réception et réalisation de commandes d’établissement scolaires, prise d’appel et de renseignement auprès des divers fournisseurs.</li>
           </ul>
         </div>
-
+        <!-- Box contenant l'avant dernière expérience pro -->
         <div class="">
+          <!-- Box avec l'intitulé du poste et la période -->
           <div class="container d-flex flex-row justify-content-center">
+            <!-- Box intitulé -->
             <div class="p-2 col-8 border d-flex justify-content-center align-items-center flex-fill fondRouge blanc arrondiD shadow">
               <span>Agent administratif</span>
             </div>
+            <!-- Box période -->
             <div class="p-2 border flex-fill fondRouge blanc arrondiG shadow">Juillet 2017 - Juin 2017</div>
           </div>
+          <!-- Description du poste -->
           <ul>
             <li class="p-4 exp">Accueil le public et le renseigne, conseiller la personne, aider les personnes lors de démarches numériques au sein du Pôle-Emploi d'Abbeville.</li>
           </ul>
         </div>
-
+        <!-- Box contenant l'avant avant dernière expérience pro -->
         <div class="">
+          <!-- Box avec l'intitulé du poste et la période -->
           <div class="container d-flex flex-row justify-content-center">
+            <!-- Box intitulé -->
             <div class="p-2 col-8 border d-flex justify-content-center align-items-center flex-fill fondRouge blanc arrondiD shadow">
               <span>Animateur service numérique</span>
             </div>
+            <!-- Box période -->
             <div class="p-2 border flex-fill fondRouge blanc arrondiG shadow">Septembre 2015 - Mai 2016</div>
           </div>
+          <!-- Description du poste -->
           <ul>
             <li class="p-4 exp">Réception et traitements des documents administratifs, mise à jour des procédures administratives, appels et prise de rendez-vous auprès de demandeurs d’emplois.</li>
           </ul>
         </div>
-
       </div>
     </section>
-
-
+    <!--  -->
+    <!-- Troisième section : les compétences -->
+    <!--  -->
     <section id="3">
+      <!-- Box global de la section -->
       <div id="cComp">
-
+        <!-- Titre principal de la section -->
         <div class="entete row d-flex justify-content-center">
           <div class="arrondi">
             <h2 class="textentete">COMPETENCE</h2>
           </div>
         </div>
-
+        <!-- Box avec les différentes compétences -->
         <div class="ctest mb-3 d-flex">
-
+          <!-- Première série de compétence : relationnel -->
           <div class="cDetail">
             <h3 class="d-flex justify-content-center pb-3">Relationnel</h3>
-
+              <!-- Regroupement des compétences en format liste -->
               <ul class="d-flex justify-content-center flex-wrap">
-                <!-- Première compétence -->
+                <!-- Première compétence relationnel -->
                 <li class="m-1 text-center">
                   <span>Accueil public</span>
+                  <!-- Progress bar correspondante-->
                   <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                    </div>
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </li>
-                <!-- Deuxième compétence -->
+                <!-- Deuxième compétence relationnel-->
                 <li class="m-1 text-center">
                   <span>Capacité d'écoute</span>
+                  <!-- Progress bar correspondante-->
                   <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                    </div>
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </li>
-                <!-- Troisième compétence -->
+                <!-- Troisième compétence relationnel-->
                 <li class="m-1 text-center">
                   <span>Force de persuasion</span>
+                  <!-- Progress bar correspondante-->
                   <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                    </div>
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </li>
-
               </ul>
-
           </div>
-
+          <!-- Deuxième série de compétence : informatique -->
           <div class="cDetail">
             <h3 class="d-flex justify-content-center pb-3">Informatique</h3>
-
+            <!-- Regroupement des compétences en format liste -->
             <div class="d-block">
               <ul class="d-flex justify-content-center flex-wrap">
-                <!-- Première compétence -->
+                <!-- Première compétence informatique-->
                 <li class="m-1 text-center">
                   <span>HTML</span>
+                  <!-- Progress bar correspondante-->
                   <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                    </div>
-                </li>
-                <!-- Deuxième compétence -->
-                <li class="m-1 text-center">
-                  <span>CSS</span>
-                  <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                    </div>
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </li>
-                <!-- Troisième compétence -->
+                <!-- Deuxième compétence informatique-->
+                <li class="m-1 text-center">
+                  <span>CSS</span>
+                  <!-- Progress bar correspondante-->
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+                <!-- Troisième compétence informatique-->
                 <li class="m-1 text-center">
                   <span>PHP / JS</span>
+                  <!-- Progress bar correspondante-->
                   <div class="progress">
                     <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
                     </div>
@@ -217,10 +234,12 @@
         </div>
       </div>
     </section>
-
+    <!--  -->
+    <!-- Quatrième section : formation et diplôme -->
+    <!--  -->
     <section id="4">
       <div class="cForm pb-3">
-        <!-- Titre de la section -->
+        <!-- Titre principal de la section -->
         <div class="entete row d-flex justify-content-center">
           <div class="arrondi">
             <h2 class="textentete">FORMATION</h2>
@@ -240,7 +259,6 @@
             </ul>
           </div>
         </div>
-
         <!-- Boite avec la date et la description -->
         <div class="cDetailForm container d-flex align-items-center mb-2">
           <!-- Sous boite avec l'année -->
@@ -255,7 +273,6 @@
             </ul>
           </div>
         </div>
-
         <!-- Boite avec la date et la description -->
         <div class="cDetailForm container d-flex align-items-center mb-2">
           <!-- Sous boite avec l'année -->
@@ -270,35 +287,42 @@
             </ul>
           </div>
         </div>
-
       </div>
     </section>
-
-
+    <!--  -->
+    <!-- Footer regroupant les contacts -->
+    <!--  -->
     <footer id="5">
+      <!-- Titre principal du footer -->
       <div class="entete row d-flex justify-content-center">
         <div class="arrondi">
           <h2 class="textentete">CONTACT</h2>
         </div>
       </div>
+      <!-- Box regroupant les différents moyens de contact -->
       <div class="d-flex justify-content-around mb-3">
+        <!-- Box pour le mail -->
         <div class="p-2">
           <a href="mailto:baguetmickael@gmail.com">
           <img src="assets/Img/icon-mail.png" alt="Icon Email" height="50" width="50" >
           </a>
         </div>
+        <!-- Box pour le téléphone -->
         <div class="p-2 text-center">
           <a href="tel:+33628640983">
             <img src="assets/Img/icon-tel.png" alt="Icon Tel" height="50" width="50">
           </a>
           <p>06.28.64.09.83</p>
         </div>
-        <div class="p-2"><a href="https://github.com/MickaelBaguet?tab=repositories"><img src="assets/Img/icon-git.png" alt="Icon Git" height="50" width="50"></a></div>
+        <!-- Box pour le GitHub -->
+        <div class="p-2">
+          <a href="https://github.com/MickaelBaguet?tab=repositories">
+            <img src="assets/Img/icon-git.png" alt="Icon Git" height="50" width="50">
+          </a>
+        </div>
       </div>
     </footer>
-
 </div>
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
